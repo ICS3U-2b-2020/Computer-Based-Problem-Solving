@@ -1,0 +1,431 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Associative Array &mdash; Computer Based Problem Solving 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/my_theme.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script src="../_static/sphinx_tabs/tabs.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sets" href="sets.html" />
+    <link rel="prev" title="Tuple" href="tuple.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Computer Based Problem Solving
+          
+
+          
+            
+            <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structured-problem-solving/index.html">Structured Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Holding Data</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="arrays.html">Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lists.html">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tuple.html">Tuple</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Associative Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sets.html">Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stacks.html">Stacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue.html">Queue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heap.html">Heap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphs.html">Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="binary-trees.html">Binary Trees</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating-objects/index.html">Creating Objects</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Holding Data</a> &raquo;</li>
+        
+      <li>Associative Array</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/holding-data/associative_array.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="associative-array">
+<span id="id1"></span><h1>Associative Array<a class="headerlink" href="#associative-array" title="Permalink to this headline">¶</a></h1>
+<p>An <a class="reference external" href="https://en.wikipedia.org/wiki/Associative_array">associative array</a>, dictionary, map, or symbol table all refer to the same thing, usually, in computer science. It is an abstract data type composed of a collection of key and value pairs, such that each possible key appears at most once in the collection. The key and value can usually be of almost any type, although usually the key is represented by a string. (If it was an integer, then you would just have an array!). The data type usually comes with operators like, the addition of a pair to the collection, the removal of a pair from the collection, the modification of an existing pair, the lookup of a value associated with a particular key.</p>
+<p>You can think of associative arrays like a list of phone numbers. In this list, you can look up a person’s name by finding their phone number. The name is the value and the number is the key. This list would look like the following table:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 53%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Phone Number</p></th>
+<th class="head"><p>Name</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1-203-456-4657</p></td>
+<td><p>John Doe</p></td>
+</tr>
+<tr class="row-odd"><td><p>1-964-725-5617</p></td>
+<td><p>Jane Smith</p></td>
+</tr>
+<tr class="row-even"><td><p>1-275-486-8562</p></td>
+<td><p>Daniel Brown</p></td>
+</tr>
+<tr class="row-odd"><td><p>1-347-374-3412</p></td>
+<td><p>John Doe</p></td>
+</tr>
+</tbody>
+</table>
+<p>Associative arrays have two important properties. Every key can only appear once, just like every phone number can only appear once in a directory. And, every key can only have one value, just like every phone number can only refer to one person. It is possible that two people can have the same name in this list, so it’s important to remember that a given value can appear more than once in an associative array.</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-Qysr docutils container">
+<div class="docutils container">
+<p>C++</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-R28= docutils container">
+<div class="docutils container">
+<p>Go</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YQ== docutils container">
+<div class="docutils container">
+<p>Java</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="docutils container">
+<p>JavaScript</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="docutils container">
+<p>Python3</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UnVieQ== docutils container">
+<div class="docutils container">
+<p>Ruby</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="docutils container">
+<p>Swift</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-Qysr active docutils container">
+<div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.</span>
+<span class="c1">//</span>
+<span class="c1">// Created by: Mr. Coxall</span>
+<span class="c1">// Created on: Dec 2019</span>
+<span class="c1">// This program uses an associative array</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;map&gt;</span><span class="cp"></span>
+
+
+<span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// this function uses an associative array</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">airportName</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+
+    <span class="c1">// an empty map</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">airports</span><span class="p">;</span>
+    <span class="c1">// a map filled with data</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">someInfo</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">{</span><span class="sc">&#39;a&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">},</span>
+        <span class="p">{</span><span class="sc">&#39;b&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">},</span>
+        <span class="p">{</span><span class="sc">&#39;c&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span>
+    <span class="p">};</span>
+
+
+    <span class="c1">// adding items</span>
+    <span class="n">airports</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;YYZ&quot;</span><span class="p">,</span> <span class="s">&quot;Toronto Pearson&quot;</span><span class="p">));</span>
+    <span class="n">airports</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;YOW&quot;</span><span class="p">,</span> <span class="s">&quot;Ottawa Canada&quot;</span><span class="p">));</span>
+    <span class="n">airports</span><span class="p">[</span><span class="s">&quot;DUB&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;Dublin Ireland&quot;</span><span class="p">;</span>
+    <span class="n">airports</span><span class="p">[</span><span class="s">&quot;LHR&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;London Heathrow&quot;</span><span class="p">;</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Type in an airport code: &quot;</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">airportName</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">airports</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">airportName</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;The name of the airport you chose is &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">airports</span><span class="p">[</span><span class="n">airportName</span><span class="p">];</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;That airport is not in the airport&#39;s dictionary.&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;All the airports:&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="k">const</span><span class="o">&amp;</span> <span class="nl">pair</span><span class="p">:</span> <span class="n">airports</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;The airport code is &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">pair</span><span class="p">.</span><span class="n">first</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; for &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">pair</span><span class="p">.</span><span class="n">second</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-R28= docutils container">
+<div class="highlight-Go notranslate"><div class="highlight"><pre><span></span><span class="c1">// associative array</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YQ== docutils container">
+<div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="c1">// associative array</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="highlight-JavaScript notranslate"><div class="highlight"><pre><span></span><span class="c1">// associative array</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
+
+<span class="c1"># Created by: Mr. Coxall</span>
+<span class="c1"># Created on: Dec 2019</span>
+<span class="c1"># This program uses an associative array</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># this function uses an associative array</span>
+
+    <span class="n">airports</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">some_info</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;item1&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                 <span class="s1">&#39;item2&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="p">}</span>
+
+    <span class="c1"># adding items</span>
+    <span class="n">airports</span><span class="p">[</span><span class="s1">&#39;YYZ&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Toronto Pearson&quot;</span>
+    <span class="n">airports</span><span class="p">[</span><span class="s1">&#39;YOW&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Ottawa Canada&quot;</span>
+    <span class="n">airports</span><span class="p">[</span><span class="s1">&#39;DUB&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Dublin Ireland&quot;</span>
+    <span class="n">airports</span><span class="p">[</span><span class="s1">&#39;LHR&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;London Heathrow&quot;</span>
+
+
+    <span class="n">airport_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Type in an airport code: &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">airport_name</span> <span class="ow">in</span> <span class="n">airports</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The name of the airport you chose is </span><span class="si">{0}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">airports</span><span class="p">[</span><span class="n">airport_name</span><span class="p">]))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That airport is not in the airport&#39;s dictionary.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All the airports:&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">airports</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The airport code is </span><span class="si">{0}</span><span class="s2"> for </span><span class="si">{1}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UnVieQ== docutils container">
+<div class="highlight-Ruby notranslate"><div class="highlight"><pre><span></span><span class="sr">//</span> <span class="n">associative</span> <span class="n">array</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="highlight-Swift notranslate"><div class="highlight"><pre><span></span><span class="c1">// associative array</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="sets.html" class="btn btn-neutral float-right" title="Sets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tuple.html" class="btn btn-neutral float-left" title="Tuple" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Patrick Coxall
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

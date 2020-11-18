@@ -1,0 +1,430 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Understanding Functions &mdash; Computer Based Problem Solving 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/my_theme.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script src="../_static/sphinx_tabs/tabs.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Functions with a Parameter" href="functions-with-a-parameter.html" />
+    <link rel="prev" title="Functions" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Computer Based Problem Solving
+          
+
+          
+            
+            <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structured-problem-solving/index.html">Structured Problem Solving</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Functions</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Understanding Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions-with-a-parameter.html">Functions with a Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="return-values.html">Return Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions-with-multiple-parameters.html">Functions with Multiple Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="default-values.html">Default Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="by-value-or-by-reference.html">By Value or By Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recursion.html">Recursion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../holding-data/index.html">Holding Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../creating-objects/index.html">Creating Objects</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Functions</a> &raquo;</li>
+        
+      <li>Understanding Functions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/functions/understanding-functions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="understanding-functions">
+<span id="id1"></span><h1>Understanding Functions<a class="headerlink" href="#understanding-functions" title="Permalink to this headline">¶</a></h1>
+<p>A <a class="reference external" href="https://en.wikipedia.org/wiki/Subroutine">Subroutine</a> or what we will just refer to as a function is a block of code written to perform a specific task. We have actually been using functions all along our programming journey so far and you probably have not even notices. Many functions are built into most programming languages, like the print() function for example. In python we usually placing our code in main(), which is a function. In C++, it looks for the main() function to start running its program. You can also create functions to do specific calculations, like converting temperature from Celsius to Fahrenheit for example. This type of conversion is very common and we might want to use it in another program (re-usability is very important in programming; why re-invent the wheel, just use someone else’s code).</p>
+<p>Functions need to have two (2) seperate mechanisms to work correctly. You need a way to create the function in your program and you also need a way to then “call” the function and get the code inside of it to run. Although not normally needed for the computer, we usually place the function definition before we call the function, so that when people are actually reading the code they have seen the function definition and know what it will do <em>before</em> they see it being called.</p>
+<p>This is a good template for keeping all the parts of your program organized in a program file:</p>
+<ol class="arabic simple">
+<li><p>comment header</p></li>
+<li><p>global (to the file) constant(s)</p></li>
+<li><p>global (to the file) variable(s)</p></li>
+<li><p>function(s)</p></li>
+<li><p>main body of code</p></li>
+</ol>
+<div class="section" id="creating-and-calling-a-function">
+<h2>Creating and Calling a  Function<a class="headerlink" href="#creating-and-calling-a-function" title="Permalink to this headline">¶</a></h2>
+<p>Each programming language has its own syntax to create and call a function. Here is an example program that uses functions to calculate area and perimeter (I know there are many ways to improve this code, we will be doing that in the next sections!(:</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-Qysr docutils container">
+<div class="docutils container">
+<p>C++</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-R28= docutils container">
+<div class="docutils container">
+<p>Go</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YQ== docutils container">
+<div class="docutils container">
+<p>Java</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="docutils container">
+<p>JavaScript</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="docutils container">
+<p>Python3</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UnVieQ== docutils container">
+<div class="docutils container">
+<p>Ruby</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="docutils container">
+<p>Swift</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-Qysr active docutils container">
+<div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.</span>
+<span class="c1">//</span>
+<span class="c1">// Created by: Mr. Coxall</span>
+<span class="c1">// Created on: Oct 2019</span>
+<span class="c1">// This program uses user defined functions</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+
+<span class="c1">// note: the style for the function name is following Google&#39;s style guide</span>
+<span class="c1">//       https://google.github.io/styleguide/cppguide.html#Function_Names</span>
+<span class="kt">void</span> <span class="nf">CalculateArea</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// calculate area</span>
+
+    <span class="kt">int</span> <span class="n">length</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">width</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">area</span><span class="p">;</span>
+
+    <span class="c1">// input</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Enter the length of a rectangle (cm): &quot;</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">length</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Enter the width of a rectangle (cm): &quot;</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">width</span><span class="p">;</span>
+
+    <span class="c1">// process</span>
+    <span class="n">area</span> <span class="o">=</span> <span class="n">length</span> <span class="o">*</span> <span class="n">width</span><span class="p">;</span>
+
+    <span class="c1">// output</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;The area is &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">area</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;cm^2&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="kt">void</span> <span class="nf">CalculatePerimeter</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// calculate perimeter</span>
+
+    <span class="kt">int</span> <span class="n">length</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">width</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">perimeter</span><span class="p">;</span>
+
+    <span class="c1">// input</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Enter the length of a rectangle (cm): &quot;</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">length</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Enter the width of a rectangle (cm): &quot;</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">width</span><span class="p">;</span>
+
+    <span class="c1">// process</span>
+    <span class="n">perimeter</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">length</span> <span class="o">+</span> <span class="n">width</span><span class="p">);</span>
+
+    <span class="c1">// output</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;The perimeter is &quot;</span><span class="o">&lt;&lt;</span> <span class="n">perimeter</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;cm&quot;</span>
+              <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// this function just calls other functions</span>
+
+    <span class="c1">// call functions</span>
+    <span class="n">CalculateArea</span><span class="p">();</span>
+    <span class="n">CalculatePerimeter</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-R28= docutils container">
+<div class="highlight-Go notranslate"><div class="highlight"><pre><span></span><span class="c1">// functions</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YQ== docutils container">
+<div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="c1">// functions</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="highlight-JavaScript notranslate"><div class="highlight"><pre><span></span><span class="c1">// functions</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
+
+<span class="c1"># Created by: Mr. Coxall</span>
+<span class="c1"># Created on: Oct 2019</span>
+<span class="c1"># This program uses user defined functions</span>
+
+
+<span class="k">def</span> <span class="nf">calculate_area</span><span class="p">():</span>
+    <span class="c1"># calculate area</span>
+
+    <span class="c1"># input</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the length of a rectangle (cm): &quot;</span><span class="p">))</span>
+    <span class="n">width</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the width of a rectangle (cm): &quot;</span><span class="p">))</span>
+
+    <span class="c1"># process</span>
+    <span class="n">area</span> <span class="o">=</span> <span class="n">length</span> <span class="o">*</span> <span class="n">witdh</span>
+
+    <span class="c1"># output</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The area is </span><span class="si">{0}</span><span class="s2"> cm²&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">area</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">calculate_perimeter</span><span class="p">():</span>
+    <span class="c1"># calculate perimeter</span>
+
+    <span class="c1"># input</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the length of a rectangle (cm): &quot;</span><span class="p">))</span>
+    <span class="n">width</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the width of a rectangle (cm): &quot;</span><span class="p">))</span>
+
+    <span class="c1"># process</span>
+    <span class="n">perimeter</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">length</span> <span class="o">+</span> <span class="n">width</span><span class="p">)</span>
+
+    <span class="c1"># output</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The perimeter is </span><span class="si">{0}</span><span class="s2"> cm&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">perimeter</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># this function just calls other functions</span>
+
+    <span class="c1"># call functions</span>
+    <span class="n">calculate_area</span><span class="p">()</span>
+    <span class="n">calculate_perimeter</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UnVieQ== docutils container">
+<div class="highlight-Ruby notranslate"><div class="highlight"><pre><span></span><span class="sr">//</span> <span class="n">functions</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="highlight-Swift notranslate"><div class="highlight"><pre><span></span><span class="c1">// functions</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="functions-with-a-parameter.html" class="btn btn-neutral float-right" title="Functions with a Parameter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Patrick Coxall
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

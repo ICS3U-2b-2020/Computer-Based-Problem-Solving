@@ -1,0 +1,396 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Lists &mdash; Computer Based Problem Solving 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/my_theme.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script src="../_static/sphinx_tabs/tabs.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tuple" href="tuple.html" />
+    <link rel="prev" title="2D Arrays" href="2d-arrays.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Computer Based Problem Solving
+          
+
+          
+            
+            <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structured-problem-solving/index.html">Structured Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Holding Data</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="arrays.html">Arrays</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tuple.html">Tuple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="associative_array.html">Associative Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sets.html">Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stacks.html">Stacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue.html">Queue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heap.html">Heap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphs.html">Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="binary-trees.html">Binary Trees</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating-objects/index.html">Creating Objects</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Holding Data</a> &raquo;</li>
+        
+      <li>Lists</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/holding-data/lists.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lists">
+<span id="id1"></span><h1>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h1>
+<p>Since in many programming languages, when you create an array the size must be set during coding so that the memory can be allocated when it is compiled, there is no way to dynamically change the size of an array during run time. This can be a huge disadvantage. One great example of wanting to have dynamic arrays is the classic video game, Space Invaders. If you imagine that all the lazer you shoot are held in an array, then how big should the array be? You have no idea how fast the user can press the “A” button. You can not tell how many lazers might be on the screen at any given time! If you cannot change the size of the array, what can we do, just making a “huge” array is wasteful and not really practical. Fortunately in many programming languages there is a class called “Lists”.
+A list is similar to an array in that it is an ordered grouping of data. You still reference the items in the list using an index. The key difference is that the size of the list can shrink and grow, during run time as needed. As you need to add items, you just use an “.Add” method (or something similar like append). The list class usually has many useful methods for adding, sorting, clearing, finding the length an so on.</p>
+<p>Here is an example of creating a list of items:</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-Qysr docutils container">
+<div class="docutils container">
+<p>C++</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-R28= docutils container">
+<div class="docutils container">
+<p>Go</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YQ== docutils container">
+<div class="docutils container">
+<p>Java</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="docutils container">
+<p>JavaScript</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="docutils container">
+<p>Python3</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UnVieQ== docutils container">
+<div class="docutils container">
+<p>Ruby</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="docutils container">
+<p>Swift</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-Qysr active docutils container">
+<div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.</span>
+<span class="c1">//</span>
+<span class="c1">// Created by: Mr. Coxall</span>
+<span class="c1">// Created on: Dec 2019</span>
+<span class="c1">// This program program uses a list</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;list&gt;</span><span class="cp"></span>
+
+
+<span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// this function uses a list</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">words</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">tempWord</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">reversedWords</span><span class="p">;</span>
+
+    <span class="c1">// input</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Please enter 1 word at a time. Enter STOP to end.&quot;</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Enter a word: &quot;</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">tempWord</span><span class="p">;</span>
+    <span class="n">words</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">tempWord</span><span class="p">);</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="n">tempWord</span> <span class="o">!=</span> <span class="s">&quot;STOP&quot;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Enter a word: &quot;</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">tempWord</span><span class="p">;</span>
+        <span class="n">words</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">tempWord</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">words</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span> <span class="c1">// remove the &quot;Stop&quot; that was added</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+    <span class="c1">//reversed words</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="nl">tempWord2</span> <span class="p">:</span> <span class="n">words</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">reversedWords</span><span class="p">.</span><span class="n">push_front</span><span class="p">(</span><span class="n">tempWord2</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Here are the words reversed.&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="nl">tempWord3</span> <span class="p">:</span> <span class="n">reversedWords</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">tempWord3</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-R28= docutils container">
+<div class="highlight-Go notranslate"><div class="highlight"><pre><span></span><span class="c1">// using a list</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YQ== docutils container">
+<div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="c1">// using a list</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="highlight-JavaScript notranslate"><div class="highlight"><pre><span></span><span class="c1">// using a list</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
+
+<span class="c1"># Created by: Mr. Coxall</span>
+<span class="c1"># Created on: Dec 2019</span>
+<span class="c1"># This program uses a list</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># this function uses a list</span>
+
+    <span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">temp_word</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="c1"># input</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please enter 1 word at a time. Enter STOP to end.&quot;</span><span class="p">)</span>
+
+    <span class="n">temp_word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a word: &quot;</span><span class="p">)</span>
+    <span class="n">words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp_word</span><span class="p">)</span>
+    <span class="k">while</span> <span class="n">temp_word</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">!=</span> <span class="s2">&quot;STOP&quot;</span><span class="p">:</span>
+        <span class="n">temp_word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a word: &quot;</span><span class="p">)</span>
+        <span class="n">words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp_word</span><span class="p">)</span>
+
+    <span class="n">words</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="c1"># remove the &quot;Stop&quot; that was added</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here are the words reversed.&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">counter</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">words</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UnVieQ== docutils container">
+<div class="highlight-Ruby notranslate"><div class="highlight"><pre><span></span><span class="sr">//</span> <span class="n">using</span> <span class="n">a</span> <span class="n">list</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="highlight-Swift notranslate"><div class="highlight"><pre><span></span><span class="c1">// using a list</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tuple.html" class="btn btn-neutral float-right" title="Tuple" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="2d-arrays.html" class="btn btn-neutral float-left" title="2D Arrays" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Patrick Coxall
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

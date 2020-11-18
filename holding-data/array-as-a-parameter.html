@@ -1,0 +1,575 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Array as a Parameter &mdash; Computer Based Problem Solving 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/my_theme.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script src="../_static/sphinx_tabs/tabs.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Arrays as a Return Value" href="array-as-a-return-value.html" />
+    <link rel="prev" title="Arrays" href="arrays.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Computer Based Problem Solving
+          
+
+          
+            
+            <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structured-problem-solving/index.html">Structured Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Holding Data</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="arrays.html">Arrays</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Pass an Array as a Parameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="array-as-a-return-value.html">Pass an Array as a Return Values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="arrays-and-for-each.html">Arrays with For ... Each Loops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2d-arrays.html">2D Arrays</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lists.html">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tuple.html">Tuple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="associative_array.html">Associative Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sets.html">Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stacks.html">Stacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue.html">Queue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heap.html">Heap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphs.html">Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="binary-trees.html">Binary Trees</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating-objects/index.html">Creating Objects</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Holding Data</a> &raquo;</li>
+        
+          <li><a href="arrays.html">Arrays</a> &raquo;</li>
+        
+      <li>Array as a Parameter</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/holding-data/array-as-a-parameter.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="array-as-a-parameter">
+<span id="id1"></span><h1>Array as a Parameter<a class="headerlink" href="#array-as-a-parameter" title="Permalink to this headline">¶</a></h1>
+<p>We know from the previous section that functions are a great way to ensure that your program is modular in its design. Any time a piece of code needs to be repeated more than once or twice, a function or might want to be used. When we use functions, we passed variables by value (making a copy) or by reference (passing the pointer); so that the function can do some process on the data. We normally pass variables like integers, strings, and floats but we have seen that you can pass any object, like an image. Since an array is just a variable that happens to hold several values and not just one, it also can be passed to a function, either by value or by reference.</p>
+<p>There is some disagreement in the computer world whether it is wise to pass arrays, especially large ones with many values in them, by value. This is because you are making a complete copy of the array and it could take up a large quantity of memory. Other programmers do not like the idea of passing by reference if you do not want the original array to change, because there is always the risk that you or someone that comes after you, will change the array by accident. They argue that modern computers have so much memory these days (as compared to the “old days”) that the risk of changing the original array is not worth the potential memory usage. We will continue to pass variables into parameters by value, unless there is a really good reason that you want to pass the object in by reference.</p>
+<p>To pass an array into a function, you declare the array inside the name of your function, just like you have been doing for regular variable, but you <strong>do not place</strong> any brackets or a number inside brackets, like when you were declaring your array normally. This is because the function does not know exactly how many elements the array will have. If you had to set it to a fixed amount, your function would not be very flexible. When the array is passed into the proc function, it will determine how many elements it has and an appropriate array variable with that many elements will be created.</p>
+<p>To declare an array as a parameter in a function, it would look like this:</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-Qysr docutils container">
+<div class="docutils container">
+<p>C++</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-R28= docutils container">
+<div class="docutils container">
+<p>Go</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YQ== docutils container">
+<div class="docutils container">
+<p>Java</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="docutils container">
+<p>JavaScript</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="docutils container">
+<p>Python3</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UnVieQ== docutils container">
+<div class="docutils container">
+<p>Ruby</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="docutils container">
+<p>Swift</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-Qysr active docutils container">
+<div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// declare an array as a parameter in a function</span>
+<span class="k">template</span><span class="o">&lt;</span><span class="kt">size_t</span> <span class="n">N</span><span class="o">&gt;</span>
+<span class="kt">int</span> <span class="n">SumOfNumbers</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">N</span><span class="o">&gt;</span> <span class="n">listOfNumbers</span><span class="p">)</span> <span class="p">{</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-R28= docutils container">
+<div class="highlight-Go notranslate"><div class="highlight"><pre><span></span><span class="c1">// declare an array as a parameter in a function</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YQ== docutils container">
+<div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="c1">// declare an array as a parameter in a function</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="highlight-JavaScript notranslate"><div class="highlight"><pre><span></span><span class="c1">// declare an array as a parameter in a function</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># declare an array as a parameter in a function</span>
+<span class="c1"># note: it just looks like a normal variable</span>
+<span class="k">def</span> <span class="nf">sum_of_numbers</span><span class="p">(</span><span class="n">list_of_numbers</span><span class="p">):</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UnVieQ== docutils container">
+<div class="highlight-Ruby notranslate"><div class="highlight"><pre><span></span><span class="sr">//</span> <span class="n">declare</span> <span class="n">an</span> <span class="n">array</span> <span class="n">as</span> <span class="n">a</span> <span class="n">parameter</span> <span class="k">in</span> <span class="n">a</span> <span class="n">function</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="highlight-Swift notranslate"><div class="highlight"><pre><span></span><span class="c1">// declare an array as a parameter in a function</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To pass an array into this function as a parameter, it would look like this:</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-Qysr docutils container">
+<div class="docutils container">
+<p>C++</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-R28= docutils container">
+<div class="docutils container">
+<p>Go</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YQ== docutils container">
+<div class="docutils container">
+<p>Java</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="docutils container">
+<p>JavaScript</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="docutils container">
+<p>Python3</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UnVieQ== docutils container">
+<div class="docutils container">
+<p>Ruby</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="docutils container">
+<p>Swift</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-Qysr active docutils container">
+<div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// pass an array into this function as a parameter</span>
+<span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="mi">10</span><span class="o">&gt;</span> <span class="n">randomNumbers</span><span class="p">;</span>
+
+<span class="n">sum</span> <span class="o">=</span> <span class="n">SumOfNumbers</span><span class="p">(</span><span class="n">randomNumbers</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-R28= docutils container">
+<div class="highlight-Go notranslate"><div class="highlight"><pre><span></span><span class="c1">// pass an array into this function as a parameter</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YQ== docutils container">
+<div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="c1">// pass an array into this function as a parameter</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="highlight-JavaScript notranslate"><div class="highlight"><pre><span></span><span class="c1">// pass an array into this function as a parameter</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># pass an array into this function as a parameter</span>
+<span class="n">random_numbers</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="nb">sum</span> <span class="o">=</span> <span class="n">sum_of_numbers</span><span class="p">(</span><span class="n">random_numbers</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UnVieQ== docutils container">
+<div class="highlight-Ruby notranslate"><div class="highlight"><pre><span></span><span class="sr">//</span> <span class="n">pass</span> <span class="n">an</span> <span class="n">array</span> <span class="n">into</span> <span class="n">this</span> <span class="n">function</span> <span class="n">as</span> <span class="n">a</span> <span class="n">parameter</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="highlight-Swift notranslate"><div class="highlight"><pre><span></span><span class="c1">// pass an array into this function as a parameter</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Here is a complete example of creating an array and passing it as a parameter to a function:</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-Qysr docutils container">
+<div class="docutils container">
+<p>C++</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-R28= docutils container">
+<div class="docutils container">
+<p>Go</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YQ== docutils container">
+<div class="docutils container">
+<p>Java</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="docutils container">
+<p>JavaScript</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="docutils container">
+<p>Python3</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UnVieQ== docutils container">
+<div class="docutils container">
+<p>Ruby</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="docutils container">
+<p>Swift</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-Qysr active docutils container">
+<div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.</span>
+<span class="c1">//</span>
+<span class="c1">// Created by: Mr. Coxall</span>
+<span class="c1">// Created on: Dec 2019</span>
+<span class="c1">// This program uses an array as a parameter</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;time.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;array&gt;</span><span class="cp"></span>
+
+
+<span class="k">template</span><span class="o">&lt;</span><span class="kt">size_t</span> <span class="n">N</span><span class="o">&gt;</span>
+<span class="kt">int</span> <span class="n">SumOfNumbers</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">N</span><span class="o">&gt;</span> <span class="n">listOfNumbers</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// this functions add up all the numbers in the list</span>
+
+    <span class="kt">int</span> <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="n">listOfNumbers</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">counter</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">listOfNumbers</span><span class="p">[</span><span class="n">counter</span><span class="p">];</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">total</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// this function uses an array</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="mi">10</span><span class="o">&gt;</span> <span class="n">randomNumbers</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">aSingleRandomNumber</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="n">srand</span><span class="p">(</span><span class="n">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">));</span>
+
+    <span class="c1">// input</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;The numbers are: &quot;</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">loop_counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">loop_counter</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">loop_counter</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">aSingleRandomNumber</span> <span class="o">=</span> <span class="p">(</span><span class="n">rand</span><span class="p">()</span> <span class="o">%</span> <span class="mi">10</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="n">randomNumbers</span><span class="p">[</span><span class="n">loop_counter</span><span class="p">]</span> <span class="o">=</span> <span class="n">aSingleRandomNumber</span><span class="p">;</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">aSingleRandomNumber</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;, &quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+    <span class="n">sum</span> <span class="o">=</span> <span class="n">SumOfNumbers</span><span class="p">(</span><span class="n">randomNumbers</span><span class="p">);</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;The sum of all the numbers is: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">sum</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-R28= docutils container">
+<div class="highlight-Go notranslate"><div class="highlight"><pre><span></span><span class="c1">// pass an array into this function as a parameter</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YQ== docutils container">
+<div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="c1">// pass an array into this function as a parameter</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="highlight-JavaScript notranslate"><div class="highlight"><pre><span></span><span class="c1">// pass an array into this function as a parameter</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
+
+<span class="c1"># Created by: Mr. Coxall</span>
+<span class="c1"># Created on: Dec 2019</span>
+<span class="c1"># This program uses a list as a parameter</span>
+
+<span class="kn">import</span> <span class="nn">random</span>
+
+
+<span class="k">def</span> <span class="nf">sum_of_numbers</span><span class="p">(</span><span class="n">list_of_numbers</span><span class="p">):</span>
+    <span class="c1"># this functions add up all the numbers in the list</span>
+
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">counter</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">list_of_numbers</span><span class="p">)):</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">list_of_numbers</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">total</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># this function uses a list</span>
+
+    <span class="n">random_numbers</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="c1"># input</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The numbers are &quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">loop_counter</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">):</span>
+        <span class="n">a_single_number</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">random_numbers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a_single_number</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0}</span><span class="s2">, &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a_single_number</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="nb">sum</span> <span class="o">=</span> <span class="n">sum_of_numbers</span><span class="p">(</span><span class="n">random_numbers</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum of all the numbers is: </span><span class="si">{0}</span><span class="s2"> &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">sum</span><span class="p">))</span>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UnVieQ== docutils container">
+<div class="highlight-Ruby notranslate"><div class="highlight"><pre><span></span><span class="sr">//</span> <span class="n">pass</span> <span class="n">an</span> <span class="n">array</span> <span class="n">into</span> <span class="n">this</span> <span class="n">function</span> <span class="n">as</span> <span class="n">a</span> <span class="n">parameter</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="highlight-Swift notranslate"><div class="highlight"><pre><span></span><span class="c1">// pass an array into this function as a parameter</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="array-as-a-return-value.html" class="btn btn-neutral float-right" title="Arrays as a Return Value" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="arrays.html" class="btn btn-neutral float-left" title="Arrays" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Patrick Coxall
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

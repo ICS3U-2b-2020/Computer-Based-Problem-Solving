@@ -1,0 +1,421 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Example Sequence Problem &mdash; Computer Based Problem Solving 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/my_theme.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script src="../_static/sphinx_tabs/tabs.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Selection" href="selection.html" />
+    <link rel="prev" title="Sequence" href="sequence.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Computer Based Problem Solving
+          
+
+          
+            
+            <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Structured Problem Solving</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="top-down-design.html">Top-Down Design in Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assignment-statements.html">Assignment Statements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scope-of-variables.html">Scope of Variables</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="sequence.html">Sequence</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Example Sequence Problem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="selection.html">Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repetition.html">Repetition</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../holding-data/index.html">Holding Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../creating-objects/index.html">Creating Objects</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Structured Problem Solving</a> &raquo;</li>
+        
+          <li><a href="sequence.html">Sequence</a> &raquo;</li>
+        
+      <li>Example Sequence Problem</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/structured-problem-solving/example-sequence-problem.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="example-sequence-problem">
+<span id="id1"></span><h1>Example Sequence Problem<a class="headerlink" href="#example-sequence-problem" title="Permalink to this headline">¶</a></h1>
+<p>The following is an example problem that has been solved using the six step computer based problem solving method mentioned above. The goal is to show you how a sequential program works and also to show how the six steps are used to develop a program from a given problem.</p>
+<div class="section" id="sequence-programming-example">
+<h2>Sequence Programming Example<a class="headerlink" href="#sequence-programming-example" title="Permalink to this headline">¶</a></h2>
+<p>Here is the problem:
+Write a program that will allow the user to enter a subtotal and the program will calculate the final total including tax.</p>
+<ol class="arabic simple">
+<li><p><strong>Top-Down Chart</strong></p></li>
+</ol>
+<p>The first thing we need to find out is how to calculate tax in your particular province. If the program is to be used anywhere in Canada, it could get really confusing since each province has a different tax rate and some even calculate taxes differently than other provinces. To help simplify the problem, we are just going to do it for Ontario. The Harmonized Sale Tax (HST) in Ontario is currently 13%. The following is a top-down design breaking the problem up into smaller manageable pieces:</p>
+<img alt="tax problem" class="align-center" src="../_images/tax-topdown.png" />
+<ol class="arabic simple" start="2">
+<li><p><strong>Flow Chart</strong></p></li>
+</ol>
+<p>The next step is to convert the top-down design into a flowchart. To help create the flow chart, use the bottom boxes of each of the arms, in order from left to right from the top-down design. This would mean Get subtotal, Calculate HST, Add 2 values together and Put final total. Remember that every flowchart has the “Start” oval at the top and the “Stop” oval at the bottom. This is so people know where to begin and end. The arrows are used so people can follow the flow. The words in the flow charts are not full sentences but simplified pieces of code. Ensure that you include any formulas and use the variable names that you will plan on using in your code.</p>
+<img alt="tax problem" class="align-center" src="../_images/tax-flowchart.png" />
+<ol class="arabic simple" start="3">
+<li><p><strong>Pseudo-code</strong></p></li>
+</ol>
+<p>Pseudo-code converts your flowchart into something that more resembles the final code you will write. Once again though it is not code (hence the name pseudo-code), so it is generically written so that it can be translated into any language. It should be understood by anyone that can write a computer program, not just people that use the same programming language that you do. The first word on each line should be a verb (an action word), since you want the computer to do something for you. By convention the first verb is also in all caps (capital letters). Here is the pseudo-code for the problem:</p>
+<div class="line-block">
+<div class="line"><strong>GET</strong> subtotal from user</div>
+<div class="line"><strong>CALCULATE</strong> tax ← subTotal * HST</div>
+<div class="line"><strong>CALCULATE</strong> total ← subTotal + tax</div>
+<div class="line"><strong>SHOW</strong> taxes back to user</div>
+<div class="line"><strong>SHOW</strong> total back to user</div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p><strong>Code</strong></p></li>
+</ol>
+<p>Once you have the pseudo-code done, the hardest part of solving the problem should be finished. Now you just convert your pseudo-code into the specific programming language you have chosen:</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-Qysr docutils container">
+<div class="docutils container">
+<p>C++</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-R28= docutils container">
+<div class="docutils container">
+<p>Go</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YQ== docutils container">
+<div class="docutils container">
+<p>Java</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="docutils container">
+<p>JavaScript</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="docutils container">
+<p>Python3</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UnVieQ== docutils container">
+<div class="docutils container">
+<p>Ruby</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="docutils container">
+<p>Swift</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-Qysr active docutils container">
+<div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.</span>
+<span class="c1">//</span>
+<span class="c1">// Created by: Mr. Coxall</span>
+<span class="c1">// Created on: Sep 2019</span>
+<span class="c1">// This program calculates total from subtotal and tax</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;iomanip&gt;</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// this function calculates total from subtotal and tax</span>
+    <span class="k">const</span> <span class="kt">float</span> <span class="n">HST</span> <span class="o">=</span> <span class="mf">0.13</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">tax</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">subTotal</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">total</span><span class="p">;</span>
+
+    <span class="c1">// input</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Enter the subtotal: $&quot;</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">subTotal</span><span class="p">;</span>
+
+    <span class="c1">// process</span>
+    <span class="n">tax</span> <span class="o">=</span> <span class="o">+</span> <span class="n">subTotal</span> <span class="o">*</span> <span class="n">HST</span><span class="p">;</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">subTotal</span> <span class="o">+</span> <span class="n">tax</span><span class="p">;</span>
+
+    <span class="c1">// output</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;The HST is: $&quot;</span>
+              <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">fixed</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">setprecision</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">setfill</span><span class="p">(</span><span class="sc">&#39;0&#39;</span><span class="p">)</span>
+              <span class="o">&lt;&lt;</span> <span class="n">tax</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;, and the total cost is: $&quot;</span>
+              <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">fixed</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">setprecision</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">setfill</span><span class="p">(</span><span class="sc">&#39;0&#39;</span><span class="p">)</span>
+              <span class="o">&lt;&lt;</span> <span class="n">total</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;.&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-R28= docutils container">
+<div class="highlight-Go notranslate"><div class="highlight"><pre><span></span><span class="c1">// This program calculates total from subtotal and tax</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YQ== docutils container">
+<div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="c1">// This program calculates total from subtotal and tax</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="highlight-JavaScript notranslate"><div class="highlight"><pre><span></span><span class="c1">// This program shows how local and global variables work</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
+
+<span class="c1"># Created by: Mr. Coxall</span>
+<span class="c1"># Created on: Sep 2019</span>
+<span class="c1"># This program calculates total from subtotal and tax</span>
+
+
+<span class="kn">import</span> <span class="nn">constants</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># this function calculates total from subtotal and tax</span>
+
+    <span class="c1"># input</span>
+    <span class="n">sub_total</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the subtotal: $&quot;</span><span class="p">))</span>
+
+    <span class="c1"># process</span>
+    <span class="n">tax</span> <span class="o">=</span> <span class="n">sub_total</span> <span class="o">*</span> <span class="n">constants</span><span class="o">.</span><span class="n">HST</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">sub_total</span> <span class="o">+</span> <span class="n">tax</span>
+
+    <span class="c1"># output</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The HST is $</span><span class="si">{0:,.2f}</span><span class="s2">, and the total cost is: $</span><span class="si">{1:,.2f}</span><span class="s2">&quot;</span>
+        <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">tax</span><span class="p">,</span> <span class="n">total</span><span class="p">))</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UnVieQ== docutils container">
+<div class="highlight-Ruby notranslate"><div class="highlight"><pre><span></span><span class="c1"># This program calculates total from subtotal and tax</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="highlight-Swift notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>This program calculates total from subtotal and tax</p>
+<ol class="arabic simple" start="5">
+<li><p><strong>Debug</strong></p></li>
+</ol>
+<p>It is hard to show the debugging step, since I ensured that the program above worked correctly before I pasted it into the page. When programmers write code it is extremely unlikely that it will work right away the first time. This is why the development environment has tools to help the programmer fix simple mistakes. The two main kinds of mistakes are syntax errors and logical errors.</p>
+<p>In modern languages high level languages and IDEs, syntax errors are usually easy to see and fix. A syntax error is a piece of code that the compiler or interpreter does not understand. It would be like speaking to you and one of the sentences did not make any sense to you. A modern IDE will nicely place a squiggly line under the code (or some other way of showing you) it does not understand, so that you can fix the problem. A logical error is a lot harder to find. This is a problem with the way you solved the problem. The code will still compile or be interpreted and run but the program will give you the wrong answer (or maybe just the wrong answer some times!). There is not easy way to solve these problems than to step though your code one line at a time.</p>
+<ol class="arabic simple" start="6">
+<li><p><strong>Document the code</strong></p></li>
+</ol>
+<p>This is hopefully not done just at the end of your programming but as you write your code. All the same it is good practice to go over you code at the end to ensure that someone else looking at it will understand what is going on. In the above example you can see that there is a comment at the start of the program and in the function as well. Also I have used a naming convention that is hopefully easy to understand what the variables are holding. In addition, the value of the HST is places in a constants, since they only change very infrequently.</p>
+<p>The above six steps are an example of how you should go about solving a compute based problem. Ensure when you are given a problem, you do not make the mistake that most people do and go directly to the computer and start coding. If you have not first been able to break the problem down into smaller pieces and solve the problem on paper, going to the computer and starting to code will not help you. You will just end up going in circles, wasting time, creating bad code and getting nowhere. Programming is just problem solving on a computer but you have to have solved the problem before you actually get to the computer to help you get the answer.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="selection.html" class="btn btn-neutral float-right" title="Selection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="sequence.html" class="btn btn-neutral float-left" title="Sequence" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Patrick Coxall
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,433 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2D Arrays &mdash; Computer Based Problem Solving 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/my_theme.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script src="../_static/sphinx_tabs/tabs.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Lists" href="lists.html" />
+    <link rel="prev" title="Arrays and For … Each Loops" href="arrays-and-for-each.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Computer Based Problem Solving
+          
+
+          
+            
+            <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structured-problem-solving/index.html">Structured Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Holding Data</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="arrays.html">Arrays</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="array-as-a-parameter.html">Pass an Array as a Parameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="array-as-a-return-value.html">Pass an Array as a Return Values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="arrays-and-for-each.html">Arrays with For ... Each Loops</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2D Arrays</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lists.html">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tuple.html">Tuple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="associative_array.html">Associative Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sets.html">Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stacks.html">Stacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue.html">Queue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heap.html">Heap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphs.html">Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="binary-trees.html">Binary Trees</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating-objects/index.html">Creating Objects</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Holding Data</a> &raquo;</li>
+        
+          <li><a href="arrays.html">Arrays</a> &raquo;</li>
+        
+      <li>2D Arrays</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/holding-data/2d-arrays.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="d-arrays">
+<span id="id1"></span><h1>2D Arrays<a class="headerlink" href="#d-arrays" title="Permalink to this headline">¶</a></h1>
+<p>All the arrays that we have used thus far have been to represent a collection of information. This is a very powerful tool and can save the programmer a lot of time and confusion when dealing with items that are somehow related to each other. Not all things can be represented with a single collection though. Several times we use a grid or <a class="reference external" href="https://en.wikipedia.org/wiki/Spreadsheet">spreadsheet</a> to keep information in rows and columns. This <a class="reference external" href="https://en.wikipedia.org/wiki/Matrix_(math)">matrix</a> of information can not be represented in a single array. In these situations we represent our data with a 2-dimensional (or <a class="reference external" href="https://en.wikipedia.org/wiki/Index_notation#Multi-dimensional_arrays">multi-dimensional array</a> ).</p>
+<p>A 2-D array can just be thought of an array of arrays.</p>
+<img alt="2D-array" class="align-center" src="../_images/2-d_array.png" />
+<p>We represent a given element with 2 indices now, instead of 1 when we
+had a single dimension. Unlike in math class where you used the
+<a class="reference external" href="https://en.wikipedia.org/wiki/Cartesian_coordinate_system">Cartesian plane</a>, and moved in the X direction and then the Y direction,</p>
+<a class="reference internal image-reference" href="../_images/Cartesian-coordinate-system.png"><img alt="Cartesian-coordinate-system" class="align-center" src="../_images/Cartesian-coordinate-system.png" style="height: 250px;" /></a>
+<p>in computer science you move up and down in the rows first and then across to the column position. Thus if we want to refer to the element in the above array that has a value of 8, we would say, studentMarks(2, 1).</p>
+<p>There are many applications of 2-D arrays, like a game board (tic-tac-toe), adventure games and business applications like spreadsheets.</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-Qysr docutils container">
+<div class="docutils container">
+<p>C++</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-R28= docutils container">
+<div class="docutils container">
+<p>Go</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YQ== docutils container">
+<div class="docutils container">
+<p>Java</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="docutils container">
+<p>JavaScript</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="docutils container">
+<p>Python3</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-UnVieQ== docutils container">
+<div class="docutils container">
+<p>Ruby</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="docutils container">
+<p>Swift</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-Qysr active docutils container">
+<div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.</span>
+<span class="c1">//</span>
+<span class="c1">// Created by: Mr. Coxall</span>
+<span class="c1">// Created on: Dec 2019</span>
+<span class="c1">// This program uses a 2D array</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;time.h&gt;</span><span class="cp"></span>
+
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="kt">int</span> <span class="n">rows</span><span class="p">,</span> <span class="kt">int</span> <span class="n">cols</span><span class="o">&gt;</span>
+<span class="kt">int</span> <span class="n">sumOfNumbers</span><span class="p">(</span><span class="kt">int</span> <span class="p">(</span><span class="o">&amp;</span><span class="n">passedIn2DList</span><span class="p">)[</span><span class="n">rows</span><span class="p">][</span><span class="n">cols</span><span class="p">])</span> <span class="p">{</span>
+    <span class="c1">// this function adds up all the elements in  a 2D array</span>
+
+    <span class="kt">int</span> <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kt">size_t</span> <span class="n">rowElement</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">rowElement</span> <span class="o">&lt;</span> <span class="n">rows</span><span class="p">;</span> <span class="o">++</span><span class="n">rowElement</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">size_t</span> <span class="n">columnElement</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">columnElement</span> <span class="o">&lt;</span> <span class="n">cols</span><span class="p">;</span> <span class="o">++</span><span class="n">columnElement</span><span class="p">)</span>
+            <span class="n">total</span> <span class="o">+=</span> <span class="n">passedIn2DList</span><span class="p">[</span><span class="n">rowElement</span><span class="p">][</span><span class="n">columnElement</span><span class="p">];</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">total</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// this function uses a 2D array</span>
+
+    <span class="kt">int</span> <span class="n">aSingleRandomNumber</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">int</span> <span class="n">rows</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">int</span> <span class="n">columns</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">a2DArray</span><span class="p">[</span><span class="n">rows</span><span class="p">][</span><span class="n">columns</span><span class="p">];</span>
+
+    <span class="n">srand</span><span class="p">(</span><span class="n">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">));</span>
+
+    <span class="c1">// input</span>
+
+    <span class="c1">// So, ...</span>
+    <span class="c1">//   In C++ you can&#39;t define array&#39;s size using variable.</span>
+    <span class="c1">//   this is why you see const int rows = 2; above,</span>
+    <span class="c1">//   so the size of the array can never change</span>
+
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">rowElement</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">rowElement</span> <span class="o">&lt;</span> <span class="n">rows</span><span class="p">;</span> <span class="n">rowElement</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">columnElement</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">columnElement</span> <span class="o">&lt;</span> <span class="n">columns</span><span class="p">;</span> <span class="n">columnElement</span><span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="n">aSingleRandomNumber</span> <span class="o">=</span> <span class="p">(</span><span class="n">rand</span><span class="p">()</span> <span class="o">%</span> <span class="mi">10</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="n">a2DArray</span><span class="p">[</span><span class="n">rowElement</span><span class="p">][</span><span class="n">columnElement</span><span class="p">]</span> <span class="o">=</span> <span class="n">aSingleRandomNumber</span><span class="p">;</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">aSingleRandomNumber</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;, &quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">sum</span> <span class="o">=</span> <span class="n">sumOfNumbers</span><span class="p">(</span><span class="n">a2DArray</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;The sum of all the numbers is: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">sum</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-R28= docutils container">
+<div class="highlight-Go notranslate"><div class="highlight"><pre><span></span><span class="c1">// arr2-D arrayay</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YQ== docutils container">
+<div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="c1">// 2-D array</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<div class="highlight-JavaScript notranslate"><div class="highlight"><pre><span></span><span class="c1">// 2-D array</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9uMw== docutils container">
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
+
+<span class="c1"># Created by: Mr. Coxall</span>
+<span class="c1"># Created on: Dec 2019</span>
+<span class="c1"># This program uses a 2D array</span>
+
+<span class="kn">import</span> <span class="nn">random</span>
+
+
+<span class="k">def</span> <span class="nf">sum_of_numbers</span><span class="p">(</span><span class="n">passed_in_2D_list</span><span class="p">):</span>
+    <span class="c1"># this function adds up all the elements in  a 2D array</span>
+
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">row_value</span> <span class="ow">in</span> <span class="n">passed_in_2D_list</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">single_element</span> <span class="ow">in</span> <span class="n">row_value</span><span class="p">:</span>
+            <span class="n">total</span> <span class="o">+=</span> <span class="n">single_element</span>
+
+    <span class="k">return</span> <span class="n">total</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># this function uses a 2D array</span>
+
+    <span class="n">a_2d_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># input</span>
+    <span class="n">rows</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many row would you like: &quot;</span><span class="p">))</span>
+    <span class="n">columns</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many columns would you like: &quot;</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">loop_counter_rows</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">rows</span><span class="p">):</span>
+        <span class="n">temp_column</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">loop_counter_columns</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">columns</span><span class="p">):</span>
+            <span class="n">a_random_number</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+            <span class="n">temp_column</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a_random_number</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0}</span><span class="s2"> &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a_random_number</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="n">a_2d_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp_column</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="nb">sum</span> <span class="o">=</span> <span class="n">sum_of_numbers</span><span class="p">(</span><span class="n">a_2d_list</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum of all the numbers is: </span><span class="si">{0}</span><span class="s2"> &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">sum</span><span class="p">))</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UnVieQ== docutils container">
+<div class="highlight-Ruby notranslate"><div class="highlight"><pre><span></span><span class="sr">//</span> <span class="mi">2</span><span class="o">-</span><span class="n">D</span> <span class="n">array</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-U3dpZnQ= docutils container">
+<div class="highlight-Swift notranslate"><div class="highlight"><pre><span></span><span class="c1">// 2-D array</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="lists.html" class="btn btn-neutral float-right" title="Lists" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="arrays-and-for-each.html" class="btn btn-neutral float-left" title="Arrays and For … Each Loops" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Patrick Coxall
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
