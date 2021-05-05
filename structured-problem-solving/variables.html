@@ -243,11 +243,6 @@
 <p>Python3</p>
 </div>
 </div>
-<div class="item sphinx-data-tab-UHl0aG9uMw==-1 docutils container">
-<div class="docutils container">
-<p>Python3</p>
-</div>
-</div>
 <div class="item sphinx-data-tab-UnVieQ== docutils container">
 <div class="docutils container">
 <p>Ruby</p>
@@ -279,58 +274,8 @@
 </div>
 </div>
 <div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-R28= docutils container">
-<div class="highlight-Go notranslate"><div class="highlight"><pre><span></span><span class="c1">// Created by: Mr. Coxall</span>
-<span class="c1">// Created on: June 2020</span>
-<span class="c1">// This program shows declaring variables</span>
-
-<span class="kn">package</span> <span class="nx">main</span>
-
-<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">isCurrent</span> <span class="p">=</span> <span class="kc">true</span> <span class="c1">// bool</span>
-    <span class="kd">var</span> <span class="nx">age</span> <span class="p">=</span> <span class="mi">32</span> <span class="c1">// int</span>
-    <span class="kd">var</span> <span class="nx">area</span> <span class="kt">float32</span>
-    <span class="kd">var</span> <span class="nx">someWords</span> <span class="p">=</span> <span class="s">&quot;Hello, World!&quot;</span> <span class="c1">// string</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YQ== docutils container">
-<div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
-<span class="cm"> * Class Variables.</span>
-<span class="cm"> * Created by: Mr. Coxall</span>
-<span class="cm"> * Created on: June 2020</span>
-<span class="cm"> * This program shows declaring variables</span>
-<span class="cm"> */</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Variables</span> <span class="p">{</span>
-  <span class="cm">/**</span>
-<span class="cm">   * This is the main method.</span>
-<span class="cm">   */</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// variable definition</span>
-    <span class="kt">boolean</span> <span class="n">isCurrent</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">32</span><span class="p">;</span>
-    <span class="kt">float</span> <span class="n">area</span><span class="p">;</span>
-    <span class="n">String</span> <span class="n">someWords</span> <span class="o">=</span> <span class="s">&quot;Hello, World!&quot;</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
-<div class="highlight-JavaScript notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
-<span class="cm"> * Created by: Mr. Coxall</span>
-<span class="cm"> * Created on: June 2020</span>
-<span class="cm"> * This program shows declaring variables</span>
-<span class="cm"> */</span>
-
-<span class="kd">var</span> <span class="nx">isCurrent</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">32</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">someWords</span> <span class="o">=</span> <span class="s2">&quot;Hello, World!&quot;</span><span class="p">;</span>
-</pre></div>
-</div>
-</div>
-<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9uMw== docutils container">
-<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<blockquote>
+<div><div class="highlight-go notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -346,27 +291,104 @@
 14
 15
 16
-17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
+17
+18
+19
+20
+21
+22
+23</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="c1">// Created on: Sep 2020</span>
+<span class="c1">// This program shows declaring variables</span>
 
-<span class="c1"># Created by: Mr. Coxall</span>
-<span class="c1"># Created on: June 2020</span>
-<span class="c1"># This program shows declaring variables</span>
+<span class="kn">package</span> <span class="nx">main</span>
 
+<span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
 
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-    <span class="c1"># variable definition</span>
-    <span class="n">is_current</span> <span class="o">=</span> <span class="kc">True</span>
-    <span class="n">age</span> <span class="o">=</span> <span class="mi">32</span>
-    <span class="n">area</span> <span class="o">=</span> <span class="mf">32.45</span>
-    <span class="n">some_words</span> <span class="o">=</span> <span class="s2">&quot;Hello, World!&quot;</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">main</span><span class="p">()</span>
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// This function shows declaring variables</span>
+    
+    <span class="kd">var</span> <span class="nx">isCurrent</span> <span class="p">=</span> <span class="kc">true</span> <span class="c1">// bool</span>
+    <span class="kd">var</span> <span class="nx">age</span> <span class="p">=</span> <span class="mi">32</span> <span class="c1">// int</span>
+    <span class="kd">var</span> <span class="nx">area</span> <span class="kt">float32</span> <span class="p">=</span> <span class="mf">14.65</span> <span class="c1">// float</span>
+    <span class="kd">var</span> <span class="nx">someWords</span> <span class="p">=</span> <span class="s">&quot;Hello, World!&quot;</span> <span class="c1">// string</span>
+    
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">isCurrent</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">age</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">area</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">someWords</span><span class="p">)</span>
+    
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">)</span>
+<span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
+</div></blockquote>
 </div>
-<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9uMw==-1 docutils container">
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YQ== docutils container">
+<blockquote>
+<div><div class="highlight-java notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> * Class Variables.</span>
+<span class="cm"> * Created by: Mr. Coxall</span>
+<span class="cm"> * Created on: Sep 2020</span>
+<span class="cm"> * This program shows declaring variables</span>
+<span class="cm"> */</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Variables</span> <span class="p">{</span>
+  <span class="cm">/**</span>
+<span class="cm">   * This is the main method.</span>
+<span class="cm">   */</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// variable definition</span>
+    <span class="kt">boolean</span> <span class="n">isCurrent</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">32</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">area</span><span class="p">;</span>
+    <span class="n">String</span> <span class="n">someWords</span> <span class="o">=</span> <span class="s">&quot;Hello, World!&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div></blockquote>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-SmF2YVNjcmlwdA== docutils container">
+<blockquote>
+<div><div class="highlight-javascript notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> * Created by: Mr. Coxall</span>
+<span class="cm"> * Created on: June 2020</span>
+<span class="cm"> * This program shows declaring variables</span>
+<span class="cm"> */</span>
+
+<span class="kd">var</span> <span class="nx">isCurrent</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">32</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">someWords</span> <span class="o">=</span> <span class="s2">&quot;Hello, World!&quot;</span><span class="p">;</span>
+</pre></div>
+</td></tr></table></div>
+</div></blockquote>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-UHl0aG9uMw== docutils container">
 <blockquote>
 <div><div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -431,7 +453,18 @@
 </div></blockquote>
 </div>
 <div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-U3dpZnQ= docutils container">
-<div class="highlight-Swift notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<blockquote>
+<div><div class="highlight-swift notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm"> * Class Variables.</span>
 <span class="cm"> * Created by: Mr. Coxall</span>
 <span class="cm"> * Created on: June 2020</span>
@@ -443,7 +476,8 @@
 <span class="kd">var</span> <span class="nv">area</span><span class="p">:</span> <span class="nb">Float</span> <span class="p">=</span> <span class="mf">32.45</span>
 <span class="kd">var</span> <span class="nv">someWords</span><span class="p">:</span> <span class="nb">String</span> <span class="p">=</span> <span class="s">&quot;Hello, World!&quot;</span>
 </pre></div>
-</div>
+</td></tr></table></div>
+</div></blockquote>
 </div>
 </div>
 </div>
