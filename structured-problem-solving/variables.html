@@ -357,7 +357,14 @@
 24
 25
 26
-27</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+27
+28
+29
+30
+31
+32
+33
+34</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> * This program shows declaring variables</span>
 <span class="cm"> *</span>
 <span class="cm"> * @author  Mr Coxall</span>
@@ -366,7 +373,7 @@
 <span class="cm">*/</span>
 
 <span class="kd">final</span> <span class="kd">class</span> <span class="nc">Variables</span> <span class="p">{</span>
-    <span class="kd">private</span> <span class="nf">MaxMin</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="nf">Variables</span><span class="p">()</span> <span class="p">{</span>
         <span class="c1">// Prevent instantiation</span>
         <span class="c1">// Optional: throw an exception e.g. AssertionError</span>
         <span class="c1">// if this ever *is* called</span>
@@ -375,13 +382,20 @@
     <span class="cm">/**</span>
 <span class="cm">     * Main entry point into program.</span>
 <span class="cm">     * @param args nothing passed in</span>
-<span class="cm">     */</span>
-     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kd">final</span> <span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-         <span class="c1">// variable definition</span>
-         <span class="kt">boolean</span> <span class="n">isCurrent</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-         <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-         <span class="kt">float</span> <span class="n">area</span><span class="p">;</span>
-         <span class="n">String</span> <span class="n">someWords</span> <span class="o">=</span> <span class="s">&quot;Hello, World!&quot;</span><span class="p">;</span>
+<span class="cm">    */</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kd">final</span> <span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// variable definition</span>
+        <span class="kt">boolean</span> <span class="n">isCurrent</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">float</span> <span class="n">area</span> <span class="o">=</span> <span class="mf">14.65F</span><span class="p">;</span>
+        <span class="n">String</span> <span class="n">someWords</span> <span class="o">=</span> <span class="s">&quot;Hello, World!&quot;</span><span class="p">;</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">isCurrent</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">age</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">area</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">someWords</span><span class="p">);</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
